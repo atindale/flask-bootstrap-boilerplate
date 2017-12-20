@@ -1,0 +1,24 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Reset Password{% endblock %}
+{% block content %}
+
+  <div class="container mt-10" style="margin-top: 5rem;">
+    <div class="col-md-4 offset-md-4">
+      <form method="post" class="form-signin">
+        <h2 class="form-signin-heading">Reset Password</h2>
+        {{ form.email(class_ = 'form-control first-input last-input', placeholder = form.email.label.text) }}
+        <br>
+        <p class="pull-left"><a href="/login">Login</a></p>
+        <p class="pull-right"><a href="/register">Register</a></p>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" value="Submit">Submit</button>
+      </form>
+    </div>
+  </div> <!-- /container -->
+
+  <style>
+    body {
+      background: #EEEEEE;
+    }
+  </style>
+{% endblock %}

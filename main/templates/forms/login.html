@@ -1,0 +1,24 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+  <div class="container mt-10" style="margin-top: 5rem;">
+    <div class="col-md-4 offset-md-4">
+      <form method="post" class="form-signin">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        {{ form.name(class_ = 'form-control first-input', placeholder = form.name.label.text, required = true, autofocus = true) }}
+        {{ form.password(class_ = 'form-control last-input', placeholder = form.password.label.text, required = true) }}
+        <br>
+        <p class="pull-left"><a href="/forgot">Forgot Password?</a></p>
+        <p class="pull-right"><a href="/register">Register</a></p>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+    </div>
+  </div> <!-- /container -->
+
+  <style>
+    body {
+      background: #EEEEEE;
+    }
+  </style>
+{% endblock %}

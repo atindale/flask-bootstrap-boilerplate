@@ -1,0 +1,25 @@
+{% extends 'layouts/main.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+
+  <div class="container mt-10" style="margin-top: 5rem;">
+    <div class="col-md-4 offset-md-4">
+      <form method="post" class="form-signin">
+        <h2 class="form-signin-heading">Register</h2>
+        {{ form.name(class_ = 'form-control first-input', placeholder = form.name.label.text, required = true, autofocus = true) }}
+        {{ form.email(class_ = 'form-control', placeholder = form.email.label.text, required = true) }}
+        {{ form.password(class_ = 'form-control', placeholder = form.password.label.text, required = true) }}
+        {{ form.confirm(class_ = 'form-control last-input', placeholder = form.confirm.label.text, required = true) }}
+        <br>
+        <center><p>Already registered? <a href="/login">Login</a></p></center>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" value="Register">Register</button>
+      </form>
+    </div>
+  </div> <!-- /container -->
+
+  <style>
+    body {
+      background: #EEEEEE;
+    }
+  </style>
+{% endblock %}
