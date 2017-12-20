@@ -2,7 +2,7 @@ import json
 import unittest
 
 from main import create_app
-
+from settings import config
 
 class TestClient(object):
     def __init__(self, app):
@@ -37,7 +37,7 @@ class TestClient(object):
 
 class TestCase(unittest.TestCase):
     def setUp(self):
-        self.app = create_app('config')
+        self.app = create_app('unittest')
         self.ctx = self.app.app_context()
         self.ctx.push()
         self.client = TestClient(self.app)

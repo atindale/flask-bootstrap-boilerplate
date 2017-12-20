@@ -1,0 +1,5 @@
+{
+  "tests/test_basics.py::BasicsTestCase::test_app_is_testing": true, 
+  "tests0/test_error_handler.py": true, 
+  "tests0/test_routes.py": true
+}
