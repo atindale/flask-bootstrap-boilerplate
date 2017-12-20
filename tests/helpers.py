@@ -2,7 +2,6 @@ import json
 import unittest
 
 from main import create_app
-from settings import config
 
 class TestClient(object):
     def __init__(self, app):
