@@ -25,3 +25,14 @@ pip install -r requirements.txt
 ```
 python run.py
 ```
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/samanyougarg/flask-bootstrap-boilerplate. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+To submit a pull request - 
+
+1. Fork/clone the repository.
+2. Develop.
+3. Create a new branch from the master branch.
+4. Open a pull request on Github describing what was fixed or added.
