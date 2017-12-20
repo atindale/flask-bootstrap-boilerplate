@@ -1,14 +1,22 @@
 sudo: false  # http://docs.travis-ci.com/user/migrating-from-legacy/
 language: python
 python:
-  - 2.7
-  - 3.4
-  - 3.5
-  - 3.6
+  - "2.6"
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev"  # 3.5 development branch
+  - "3.6"
+  - "3.6-dev"  # 3.6 development branch
+  - "3.7-dev"  # 3.7 development branch
+  - "nightly"
+# command to install dependencies
 install:
   - pip install -U flake8
   - pip install -U isort
   - pip install -U yapf
+  - pip install -r requirements.txt
+# command to run tests
 script:
-  - find . -not -path '*/.eggs/*' -not -path './venv/*' -name '*.py' | xargs flake8
-  - py.test tests/
+  - pytest tests/
