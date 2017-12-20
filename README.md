@@ -18,7 +18,7 @@ source venv/bin/activate
 
 ### 3. Install Dependencies
 ```
-pip install -r config/development/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Run the app
